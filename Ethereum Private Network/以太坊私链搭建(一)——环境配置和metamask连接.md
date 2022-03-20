@@ -1,5 +1,4 @@
 基于某些需求我需要将一个以太坊网络运行在自己的服务器上，因此在查阅了相关资料后，我在自己的服务器上搭建了一个私链。搭建一个以太坊私链主要有两步：①安装geth；②私链环境配置和启动。
-
 服务器系统版本：Ubuntu Server 18.04.1 LTS 64位；geth版本：1.10.16-stable-20356e7
 
 # 一、安装geth
@@ -103,7 +102,7 @@ console表示在运行私链节点的同时开启控制台，这样就可以在�
 
 # 三、用MetaMask钱包连接私链
 
-若要用metamask钱包连接私链节点，则需要在metamask钱包中依次点击“设定-网络-添加网络”进行私链网络的添加，所输入的信息如下：
+若要用metamask钱包连接私链节点，则需要在metamask钱包中依次点击“设定-网络-添加网络”进行私链网络的添加，所输入的信息如下。
 
 网络名称：FangChain
 
@@ -126,3 +125,13 @@ Currency Symbol：FangB
 --http，--http.addr，--http.port和--http.corsdomain是较新版本的geth才启用的字段，老版本对应的字段分别为--rpc，--rpcaddr，--rpcport和rpccorsdomain，根据实际版本进行替换即可。
 而在新版本中如果你用的是websocket协议与节点交互，则对应的字段是--ws，--wsaddr，--ws.port和--ws.origins，具体命令详情可以在geth控制台中使用geth -h命令进行查看。
 --port端口最好自行指定一个别的端口，因为8545端口为默认端口，在使用默认端口，且启动私链时允许所有ip地址的http请求和所有跨域请求的情况下，容易被机器人攻击，在使用默认端口地情况下节点容易被高频率地访问，而修改端口可以有效避免这种情况。
+
+
+
+# 参考资料
+
+https://geth.ethereum.org/docs/
+
+https://gist.github.com/0mkara/b953cc2585b18ee098cd
+
+第一个为geth官网，第二个为genesis.json文件的解析。
