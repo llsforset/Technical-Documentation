@@ -1,6 +1,6 @@
-genesis.json文件用于配置生成以太坊私链网络的创世区块，当我们需要去创建一个创世区块时，我们可以通过修改genesis.json文件内的初始参数将这些数据写入创世区块。下面是以太坊官方文档给出的一个例子：
+​	genesis.json文件用于配置生成以太坊私链网络的创世区块，当我们需要去创建一个创世区块时，我们可以通过修改genesis.json文件内的初始参数将这些数据写入创世区块。下面是以太坊官方文档给出的一个例子：
 
-```bash
+```json
 {
   "config": {
     "chainId": 15,
@@ -22,7 +22,7 @@ genesis.json文件用于配置生成以太坊私链网络的创世区块，当�
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
+
 
 # 字段解读
 
